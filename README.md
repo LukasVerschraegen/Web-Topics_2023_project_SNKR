@@ -14,7 +14,9 @@ In de file WT_project_reflectie.pdf vind je mijn reflectie over hoe ik deze topi
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Aangezien ik firebase gebruikte, geef ik nog enkele foto's mee over hoe mijn databank eruit ziet.
+
 ![image](https://user-images.githubusercontent.com/101976886/227782779-0bb4c0ab-cb2f-47fa-bccc-a663453f0094.png)
+
 Ik gebruikte een Authentication en realtime database, dit kunt u zien in bovenstaande foto.
 In onderstaande foto's geef ik een voorbeeld van de authentication en realtime database.
 
