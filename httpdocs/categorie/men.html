@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SNKR</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/b01e9844c8.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script type="module" src="../js/databank.js"></script>
+	<script type="module" src="../js/user.js"></script>
+	<script src="../js/visible.js" defer></script>
+</head>
+
+<body>
+
+	<header>
+		<nav class="flex items-center justify-between flex-wrap bg-emerald-700 p-6">
+			<a href="../index.html" class="flex items-center flex-shrink-0 text-white mr-16">
+				<img src="../img/logo.png" alt="Product screenshot" class="fill-current h-11 w-11 mr-3" width="305"
+					height="109">
+				<span class="font-bold text-xl tracking-tight">SNKR</span>
+			</a>
+
+			<div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+				<div class="text-sm lg:flex-grow">
+					<a href="men.html"
+						class="block mt-4 lg:inline-block lg:mt-0  font-semibold text-teal-200 hover:text-white mr-4">MEN</a>
+					<a href="women.html"
+						class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white mr-4">WOMEN</a>
+					<a href="kids.html"
+						class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white mr-4">KIDS</a>
+					<a href="3dfile.html?schoen=custom"
+						class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white">CUSTOM</a>
+				</div>
+				<div>
+					<p id="naam" class="mr-8"></p>
+
+				</div>
+				<div>
+					<button id="logout"
+						class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign
+						Out</button>
+
+					<a href="../signin_up/signin.html"
+						class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign
+						In</a>
+					<a href="../signin_up/signup.html"
+						class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign
+						Up</a>
+					<a href="../checkout/winkelmand.html" class="inline-block ml-16">
+						<span style="font-size: 1.5em; color: white;">
+							<i class="fas fa-cart-plus"></i>
+						</span>
+					</a>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+
+
+
+
+	<main class="pl-16 pr-16">
+
+
+
+		<section class="bg-white dark:bg-gray-900 m-4">
+			<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-6 lg:px-6">
+				<div class="mx-auto max-w-screen-md sm:text-center">
+					<h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">
+						New Men Mode</h2>
+					<p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
+						Exclusive shoes, Latest Styles, Trends</p>
+				</div>
+			</div>
+		</section>
+
+
+
+		<div class="flex flex-wrap font-sans" id="men1">
+			<div class="flex-none w-64 relative">
+				<img src="../img/M1.png" alt="M1" class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+			</div>
+			<form class="flex-auto p-6 ">
+				<div class="flex flex-wrap">
+					<h1 class="flex-auto text-lg font-semibold text-slate-900">
+						Nike Air Mag
+					</h1>
+					<div class="text-lg font-semibold text-slate-500">
+						€15.983
+					</div>
+					<div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+						In stock
+					</div>
+				</div>
+				<div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+					<div class="space-x-2 flex text-sm">
+						<label>
+							<input class="sr-only peer" name="sm1" type="radio" value="40" checked>
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								40
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm1" type="radio" value="41">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								41
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm1" type="radio" value="42">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								42
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm1" type="radio" value="43">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								43
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm1" type="radio" value="44">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								44
+							</span>
+						</label>
+					</div>
+				</div>
+				<div class="flex space-x-4 mb-6 text-sm font-medium">
+					<div class="flex-auto flex space-x-4">
+						<button id="m1" class=" px-6 py-2 font-semibold rounded-md bg-black text-white" type="submit"
+							value="15.983 Nike air">
+							Buy now
+						</button>
+
+						<a href="3dfile.html?schoen=mv1"
+							class=" text-center px-6 py-2 font-semibold rounded-md border border-slate-200 text-slate-900 ">View
+							3D</a>
+
+					</div>
+
+				</div>
+			</form>
+		</div>
+		<h4 class="text-sm font-semibold text-slate-700 pl-6 pb-3">Description:</h4>
+		<p class="text-sm text-slate-700 pl-6 pb-3">This shoe were made to replicate the shoe worn by Marty McFly in the
+			Back to the future II movie. The shoe features glowing LED panels, upper contours and luminescent Nike logo.
+			Nike Air Mag can glow up to 5 hours from the built-in battery, and about 3000 hours until you'll need to
+			replace the battery. This feature makes these shoes first rechargeable sneakers from Nike. Only 1500 pairs
+			were ever made, and none of them got to the store. They all were sold on the auction with all benefits going
+			to Michael Jordans Fox foundation for research for finding cure of Parkinson disease. Fox is a star of Back
+			to Future, and he also has a Parkinson disease. Sneakers come with anti-gravity magnetic case, battery
+			charger and commemorative pin.</p>
+		<p class="text-sm text-slate-700 p-6">Free shipping on all orders.</p>
+		<div class="py-6 bg-white"></div>
+
+
+
+
+
+		<div class="flex flex-wrap font-sans" id="men2">
+			<div class="flex-none w-64 relative">
+				<img src="../img/M2.png" alt="M2" class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+			</div>
+			<form class="flex-auto p-6">
+				<div class="flex flex-wrap">
+					<h1 class="flex-auto text-lg font-semibold text-slate-900">
+						Nike Jordan 6 UNC
+					</h1>
+					<div class="text-lg font-semibold text-slate-500">
+						€209
+					</div>
+					<div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+						In stock
+					</div>
+				</div>
+				<div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+					<div class="space-x-2 flex text-sm">
+						<label>
+							<input class=" sr-only peer" name="sm2" type="radio" value="40" checked>
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								40
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm2" type="radio" value="41">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								41
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm2" type="radio" value="42">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								42
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm2" type="radio" value="43">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								43
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm2" type="radio" value="44">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								44
+							</span>
+						</label>
+					</div>
+				</div>
+				<div class="flex space-x-4 mb-6 text-sm font-medium">
+					<div class="flex-auto flex space-x-4">
+						<button id="m2" class=" px-6 py-2 font-semibold rounded-md bg-black text-white" type="submit"
+							value="209   Nike Jordan 6 UNC">
+							Buy now
+						</button>
+						<a href="3dfile.html?schoen=mv2"
+							class=" text-center px-6 py-2 font-semibold rounded-md border border-slate-200 text-slate-900 ">View
+							3D</a>
+
+					</div>
+
+				</div>
+			</form>
+		</div>
+		<h4 class="text-sm font-semibold text-slate-700 pl-6 pb-3">Description:</h4>
+		<p class="text-sm text-slate-700 pl-6">Jordan Brand drew inspiration from Michael Jordan's alma mater, the
+			University of North Carolina, for the Air Jordan 6 Retro UNC White.
+			Constructed with University Blue Durabuck and white leather, the Air Jordan 6 Retro UNC White utilizes color
+			blocking reminiscent of the renowned Jordan 6 Carmine. Hits of navy blue on the tongue and midsole integrate
+			UNC's lesser known school color. At the heel, a Jordan Team patch nod to the jock tags that are stitched to
+			the bottom of UNC's uniforms. From there, an icy semi-translucent Air sole completes the design.</p>
+		<p class="text-sm text-slate-700 p-6">Free shipping on all orders.</p>
+		<div class="py-6 bg-white"></div>
+
+
+
+
+		<div class="flex flex-wrap font-sans" id="men3">
+			<div class="flex-none w-64 relative">
+				<img src="../img/M3.png" alt="M3" class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+			</div>
+			<form class="flex-auto p-6">
+				<div class="flex flex-wrap">
+					<h1 class="flex-auto text-lg font-semibold text-slate-900">
+						Adidas Yeezy slides Green
+					</h1>
+					<div class="text-lg font-semibold text-slate-500">
+						€121
+					</div>
+					<div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+						In stock
+					</div>
+				</div>
+				<div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+					<div class="space-x-2 flex text-sm">
+						<label>
+							<input class="sr-only peer" name="sm3" type="radio" value="40" checked>
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								40
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm3" type="radio" value="41">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								41
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm3" type="radio" value="42">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								42
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm3" type="radio" value="43">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								43
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm3" type="radio" value="44">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								44
+							</span>
+						</label>
+					</div>
+				</div>
+				<div class="flex space-x-4 mb-6 text-sm font-medium">
+					<div class="flex-auto flex space-x-4">
+						<button id="m3" class=" px-6 py-2 font-semibold rounded-md bg-black text-white" type="submit"
+							value="121   Adidas Yeezy slides Green">
+							Buy now
+						</button>
+						<a href="3dfile.html?schoen=mv3"
+							class=" text-center px-6 py-2 font-semibold rounded-md border border-slate-200 text-slate-900 ">View
+							3D</a>
+
+					</div>
+
+				</div>
+			</form>
+		</div>
+		<h4 class="text-sm font-semibold text-slate-700 pl-6 pb-3">Description:</h4>
+		<p class="text-sm text-slate-700 pl-6">The 2022 reissue of the adidas Yeezy Slide ‘Glow Green’ brings back an
+			especially energetic colorway of Kanye West’s comfort sandal. Forgoing the Yeezy brand’s typical earth-tone
+			palette, the slip-on features a fluorescent green finish throughout the one-piece EVA foam build. Exterior
+			branding is limited to adidas’ three-stripe logo debossed on the footbed. Underfoot, the outsole utilizes a
+			series of deep horizontal grooves, providing a combination of shock absorption and grippy traction.</p>
+		<p class="text-sm text-slate-700 p-6">Free shipping on all orders.</p>
+		<div class="py-6 bg-white"></div>
+
+
+		<div class="flex flex-wrap font-sans" id="men4">
+			<div class="flex-none w-64 relative">
+				<img src="../img/M4.png" alt="M4" class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+			</div>
+			<form class="flex-auto p-6">
+				<div class="flex flex-wrap">
+					<h1 class="flex-auto text-lg font-semibold text-slate-900">
+						Adidas Yeezy Boost 350 V2
+					</h1>
+					<div class="text-lg font-semibold text-slate-500">
+						€330
+					</div>
+					<div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+						In stock
+					</div>
+				</div>
+				<div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+					<div class="space-x-2 flex text-sm">
+						<label>
+							<input class="sr-only peer" name="sm4" type="radio" value="40" checked>
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								40
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm4" type="radio" value="41">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								41
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm4" type="radio" value="42">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								42
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm4" type="radio" value="43">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								43
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sm4" type="radio" value="44">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								44
+							</span>
+						</label>
+					</div>
+				</div>
+				<div class="flex space-x-4 mb-6 text-sm font-medium">
+					<div class="flex-auto flex space-x-4">
+						<button id="m4" class=" px-6 py-2 font-semibold rounded-md bg-black text-white" type="submit"
+							value="330   Adidas Yeezy Boost 350 V2">
+							Buy now
+						</button>
+						<a href="3dfile.html?schoen=mv4"
+							class=" text-center px-6 py-2 font-semibold rounded-md border border-slate-200 text-slate-900 ">View
+							3D</a>
+
+					</div>
+
+				</div>
+			</form>
+		</div>
+		<h4 class="text-sm font-semibold text-slate-700 pl-6 pb-3">Description:</h4>
+		<p class="text-sm text-slate-700 pl-6">The adidas Yeezy Boost 350 V2 Slate Core Black Slate takes on a sock like
+			design that is complemented with a neutral two-tone color scheme.
+
+			The Yeezy Boost 350 by adidas in black upper utilizes tan Primeknit construction, highlighted by distinctive
+			center stitching down the vamp. A contrasting black streak adorns the lateral side with signature ‘SPLY-350’
+			branding. The shoe sits atop a Boost midsole, confined in a semi-translucent TPU cage for durability and
+			support.
+
+			The adidas Yeezy Boost 350 V2 Slate Core Black Slate was originally released on the 3rd of September 2022
+		</p>
+		<p class="text-sm text-slate-700 p-6">Free shipping on all orders.</p>
+		<div class="py-6 bg-white"></div>
+
+	</main>
+
+
+
+
+	<footer class="bg-white dark:bg-gray-900">
+		<div class="mb-6 md:mb-0 p-8">
+			<a href="../index.html" class="flex items-center">
+				<img src="../img/logo.png" alt="Product screenshot" class="fill-current h-11 w-11 mr-3" width="305"
+					height="109">
+				<span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">SNKR</span>
+			</a>
+		</div>
+		<div class="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Company</h2>
+				<ul class="text-gray-500 dark:text-gray-400">
+					<li class="mb-4">
+						<a href="#" class=" hover:underline">About</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Careers</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Brand Center</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Help Center</h2>
+				<ul class="text-gray-500 dark:text-gray-400">
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Twitter</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Facebook</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Legal</h2>
+				<ul class="text-gray-500 dark:text-gray-400">
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Privacy Policy</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Licensing</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Terms&Conditions</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Locations</h2>
+				<ul class="text-gray-500 dark:text-gray-400">
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Gent</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Brugge</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Antwerpen</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+			<span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 All Rights Reserved.
+			</span>
+			<div class="flex mt-4 mr-16 space-x-6 sm:justify-center md:mt-0">
+
+				<a href="https://www.facebook.com/">
+					<span style="font-size: 2em; color: white;">
+						<i class="fab fa-facebook"></i>
+					</span>
+				</a>
+				<a href="https://www.instagram.com/">
+					<span style="font-size: 2em; color: white;">
+						<i class="fab fa-instagram"></i>
+					</span>
+				</a>
+				<a href="https://twitter.com/">
+					<span style="font-size: 2em; color: white;">
+						<i class="fab fa-twitter"></i>
+					</span>
+				</a>
+				<a href="https://outlook.office.com/mail/">
+					<span style="font-size: 2em; color: white;">
+						<i class="fas fa-envelope"></i>
+					</span>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+
+
+</body>
+
+</html>

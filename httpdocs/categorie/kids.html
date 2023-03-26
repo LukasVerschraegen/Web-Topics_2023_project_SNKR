@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SNKR</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/b01e9844c8.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script type="module" src="../js/databank.js"></script>
+	<script type="module" src="../js/user.js"></script>
+	<script src="../js/visible.js" defer></script>
+</head>
+
+<body>
+
+
+
+	<header>
+		<nav class="flex items-center justify-between flex-wrap bg-emerald-700 p-6">
+			<a href="../index.html" class="flex items-center flex-shrink-0 text-white mr-16">
+				<img src="../img/logo.png" alt="Product screenshot" class="fill-current h-11 w-11 mr-3" width="305"
+					height="109">
+				<span class="font-bold text-xl tracking-tight">SNKR</span>
+			</a>
+
+			<div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+				<div class="text-sm lg:flex-grow">
+					<a href="men.html"
+						class="block mt-4 lg:inline-block lg:mt-0  font-semibold text-teal-200 hover:text-white mr-4">MEN</a>
+					<a href="women.html"
+						class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white mr-4">WOMEN</a>
+					<a href="kids.html"
+						class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white mr-4">KIDS</a>
+					<a href="3dfile.html?schoen=custom"
+						class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white">CUSTOM</a>
+				</div>
+				<div>
+					<p id="naam" class="mr-8"></p>
+
+				</div>
+				<div>
+					<button id="logout"
+						class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign
+						Out</button>
+
+					<a href="../signin_up/signin.html"
+						class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign
+						In</a>
+					<a href="../signin_up/signup.html"
+						class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign
+						Up</a>
+					<a href="../checkout/winkelmand.html" class="inline-block ml-16">
+						<span style="font-size: 1.5em; color: white;">
+							<i class="fas fa-cart-plus"></i>
+						</span>
+					</a>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+
+
+
+
+	<main class="pl-16 pr-16">
+
+
+
+		<section class="bg-white dark:bg-gray-900 m-4">
+			<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-6 lg:px-6">
+				<div class="mx-auto max-w-screen-md sm:text-center">
+					<h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">
+						New Kids Mode</h2>
+					<p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
+						Exclusive shoes, Latest Styles, Trends</p>
+				</div>
+			</div>
+		</section>
+
+
+
+		<div class="flex flex-wrap font-sans" id="kids1">
+			<div class="flex-none w-64 relative">
+				<img src="../img/K1.png" alt="K1" class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+			</div>
+			<form class="flex-auto p-6 ">
+				<div class="flex flex-wrap">
+					<h1 class="flex-auto text-lg font-semibold text-slate-900">
+						Nike Air Force 1 Low Premier
+					</h1>
+					<div class="text-lg font-semibold text-slate-500">
+						€156
+					</div>
+					<div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+						In stock
+					</div>
+				</div>
+				<div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+					<div class="space-x-2 flex text-sm">
+						<label>
+							<input class="sr-only peer" name="sk1" type="radio" value="28" checked>
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								28
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk1" type="radio" value="29">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								29
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk1" type="radio" value="30">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								30
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk1" type="radio" value="31">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								31
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk1" type="radio" value="32">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								32
+							</span>
+						</label>
+					</div>
+				</div>
+				<div class="flex space-x-4 mb-6 text-sm font-medium">
+					<div class="flex-auto flex space-x-4">
+						<button id="k1" class=" px-6 py-2 font-semibold rounded-md bg-black text-white" type="submit"
+							value="156     Nike Air force 1 low premier">
+							Buy now
+						</button>
+
+						<a href="3dfile.html?schoen=kv1"
+							class=" text-center px-6 py-2 font-semibold rounded-md border border-slate-200 text-slate-900 ">View
+							3D</a>
+
+
+					</div>
+
+				</div>
+			</form>
+		</div>
+		<h4 class="text-sm font-semibold text-slate-700 pl-6 pb-3">Description:</h4>
+		<p class="text-sm text-slate-700 pl-6 pb-3">Nike recently put together a “Beef & Broccoli”-inspired take on the
+			lifestyle classic. The latest AF1 colorway draws from the distinctive green and brown tones found in the
+			ubiquitous Chinese dish. The fall-ready shoe features a tough olive canvas heel and midfoot region, accented
+			by premium brown nubuck panels on the toebox, throat, and eyestays. Boot detailing on the shoe comes in the
+			form of matching cord laces and brass top eyelets. Finishing up the rugged look of the shoe is a dark grey
+			midsole, complemented by a ridged black rubber outsole.
+		</p>
+		<p class="text-sm text-slate-700 p-6">Free shipping on all orders.</p>
+		<div class="py-6 bg-white"></div>
+
+
+		<div class="flex flex-wrap font-sans" id="kids2">
+			<div class="flex-none w-64 relative">
+				<img src="../img/K2.png" alt="K2" class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+			</div>
+			<form class="flex-auto p-6 ">
+				<div class="flex flex-wrap">
+					<h1 class="flex-auto text-lg font-semibold text-slate-900">
+						Adiddas STAN SMITH green.
+					</h1>
+					<div class="text-lg font-semibold text-slate-500">
+						€115
+					</div>
+					<div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+						In stock
+					</div>
+				</div>
+				<div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+					<div class="space-x-2 flex text-sm">
+						<label>
+							<input class="sr-only peer" name="sk2" type="radio" value="28" checked>
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								28
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk2" type="radio" value="29">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								29
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk2" type="radio" value="30">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								30
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk2" type="radio" value="31">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								31
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk2" type="radio" value="32">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								32
+							</span>
+						</label>
+					</div>
+				</div>
+				<div class="flex space-x-4 mb-6 text-sm font-medium">
+					<div class="flex-auto flex space-x-4">
+						<button id="k2" class=" px-6 py-2 font-semibold rounded-md bg-black text-white" type="submit"
+							value="115      Adiddas stan smith -green">
+							Buy now
+						</button>
+
+						<a href="3dfile.html?schoen=kv2"
+							class=" text-center px-6 py-2 font-semibold rounded-md border border-slate-200 text-slate-900 ">View
+							3D</a>
+
+
+					</div>
+
+				</div>
+			</form>
+		</div>
+		<h4 class="text-sm font-semibold text-slate-700 pl-6 pb-3">Description:</h4>
+		<p class="text-sm text-slate-700 pl-6 pb-3">Timeless appeal. Effortless style. Everyday versatility. For over 50
+			years and counting, adidas Stan Smith Shoes have continued to hold their place as an icon. This pair shows
+			off a fresh redesign as part of adidas' commitment to use only recycled polyester by 2024. With a vegan
+			upper and an outsole made from rubber waste, they still have iconic style, they're just made with the planet
+			in mind.
+		</p>
+		<p class="text-sm text-slate-700 pl-6 pb-3">
+			This product is made with vegan alternatives to animal-derived ingredients or materials. It is also made
+			with Primegreen, a series of high-performance recycled materials. 50% of upper is recycled content. No
+			virgin polyester.
+		</p>
+
+		<p class="text-sm text-slate-700 p-6">Free shipping on all orders.</p>
+		<div class="py-6 bg-white"></div>
+
+
+
+		<div class="flex flex-wrap font-sans" id="kids3">
+			<div class="flex-none w-64 relative">
+				<img src="../img/K3.png" alt="K3" class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+			</div>
+			<form class="flex-auto p-6 ">
+				<div class="flex flex-wrap">
+					<h1 class="flex-auto text-lg font-semibold text-slate-900">
+						Converse Blue Pro Blaze Strap Hi
+					</h1>
+					<div class="text-lg font-semibold text-slate-500">
+						€55
+					</div>
+					<div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+						In stock
+					</div>
+				</div>
+				<div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+					<div class="space-x-2 flex text-sm">
+						<label>
+							<input class="sr-only peer" name="sk3" type="radio" value="28" checked>
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								28
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk3" type="radio" value="29">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								29
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk3" type="radio" value="30">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								30
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk3" type="radio" value="31">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								31
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk3" type="radio" value="32">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								32
+							</span>
+						</label>
+					</div>
+				</div>
+				<div class="flex space-x-4 mb-6 text-sm font-medium">
+					<div class="flex-auto flex space-x-4">
+						<button id="k3" class=" px-6 py-2 font-semibold rounded-md bg-black text-white" type="submit"
+							value="55     Converse Blauw pro blaze strap hi">
+							Buy now
+						</button>
+
+						<a href="3dfile.html?schoen=kv3"
+							class=" text-center px-6 py-2 font-semibold rounded-md border border-slate-200 text-slate-900 ">View
+							3D</a>
+
+
+					</div>
+
+				</div>
+			</form>
+		</div>
+		<h4 class="text-sm font-semibold text-slate-700 pl-6 pb-3">Description:</h4>
+		<p class="text-sm text-slate-700 pl-6 pb-3">Cool, mid-height sneaker Pro Blaze Strap Hi from Converse. The
+			exterior has a leather look, the lining is textile and the footbed is not removable. The white and
+			yellow details on the blue exterior stand out nicely and make it complete. Super easy on this
+			Super easy on this sneaker is the elastic lace in combination with the velcro closure. We are fans!
+		</p>
+
+		<p class="text-sm text-slate-700 p-6">Free shipping on all orders.</p>
+		<div class="py-6 bg-white"></div>
+
+
+		<div class="flex flex-wrap font-sans" id="kids4">
+			<div class="flex-none w-64 relative">
+				<img src="../img/K4.png" alt="K4" class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+			</div>
+			<form class="flex-auto p-6 ">
+				<div class="flex flex-wrap">
+					<h1 class="flex-auto text-lg font-semibold text-slate-900">
+						NEW BALANCE 880 V12
+					</h1>
+					<div class="text-lg font-semibold text-slate-500">
+						€160
+					</div>
+					<div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+						In stock
+					</div>
+				</div>
+				<div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+					<div class="space-x-2 flex text-sm">
+						<label>
+							<input class="sr-only peer" name="sk4" type="radio" value="28" checked>
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								28
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk4" type="radio" value="29">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								29
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk4" type="radio" value="30">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								30
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk4" type="radio" value="31">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								31
+							</span>
+						</label>
+						<label>
+							<input class="sr-only peer" name="sk4" type="radio" value="32">
+							<span
+								class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+								32
+							</span>
+						</label>
+					</div>
+				</div>
+				<div class="flex space-x-4 mb-6 text-sm font-medium">
+					<div class="flex-auto flex space-x-4">
+						<button id="k4" class=" px-6 py-2 font-semibold rounded-md bg-black text-white" type="submit"
+							value="160     New Balance 880 V12">
+							Buy now
+						</button>
+
+						<a href="3dfile.html?schoen=kv4"
+							class=" text-center px-6 py-2 font-semibold rounded-md border border-slate-200 text-slate-900 ">View
+							3D</a>
+
+
+					</div>
+
+				</div>
+			</form>
+		</div>
+		<h4 class="text-sm font-semibold text-slate-700 pl-6 pb-3">Description:</h4>
+		<p class="text-sm text-slate-700 pl-6 pb-3">The New Balance 880 v12 has a neutral stride. Thanks to the
+			Fresh Foam cushioning you benefit from a soft and lightweight feel. The mesh upper provides extra comfort
+			and has increased breathability.
+			<br>
+			In addition, the New Balance 880 v12 has a tight fit without the running shoe feeling trapped
+			feel. The rubber outsole is abrasion-resistant, making the running shoe last longer.
+
+		</p>
+		<p class="text-sm text-slate-700 pl-6 pb-3">
+			The difference between the V11 and the V12 is that the midsole materials have been "flipped. The material
+			with the highest energy return is now closest to the ground under the forefoot for a
+			dynamic stride. Under the heel and continuing under the forefoot, the composition of the material is such
+			that
+			this provides the optimal combination between soft cushioning and a stable platform.
+		</p>
+		<p class="text-sm text-slate-700 pl-6 pb-3">
+			The same combination is incorporated into the wear sole as stiffer rubber with more abrasion resistance is
+			applied under the
+			heel and medial side of the midfoot. This provides slightly more torsional stiffness and increases
+			the number of miles you can run on the 880 v12. The forefoot features a slightly softer rubber
+			to work together with the midsole to ensure a dynamic stride.
+		</p>
+		<p class="text-sm text-slate-700 p-6">Free shipping on all orders.</p>
+		<div class="py-6 bg-white"></div>
+
+	</main>
+
+
+
+
+	<footer class="bg-white dark:bg-gray-900">
+		<div class="mb-6 md:mb-0 p-8">
+			<a href="../index.html" class="flex items-center">
+				<img src="../img/logo.png" alt="Product screenshot" class="fill-current h-11 w-11 mr-3" width="305"
+					height="109">
+				<span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">SNKR</span>
+			</a>
+		</div>
+		<div class="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Company</h2>
+				<ul class="text-gray-500 dark:text-gray-400">
+					<li class="mb-4">
+						<a href="#" class=" hover:underline">About</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Careers</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Brand Center</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Help Center</h2>
+				<ul class="text-gray-500 dark:text-gray-400">
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Twitter</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Facebook</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Legal</h2>
+				<ul class="text-gray-500 dark:text-gray-400">
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Privacy Policy</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Licensing</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Terms&Conditions</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Locations</h2>
+				<ul class="text-gray-500 dark:text-gray-400">
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Gent</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Brugge</a>
+					</li>
+					<li class="mb-4">
+						<a href="#" class="hover:underline">Antwerpen</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+			<span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 All Rights Reserved.
+			</span>
+			<div class="flex mt-4 mr-16 space-x-6 sm:justify-center md:mt-0">
+
+				<a href="https://www.facebook.com/">
+					<span style="font-size: 2em; color: white;">
+						<i class="fab fa-facebook"></i>
+					</span>
+				</a>
+				<a href="https://www.instagram.com/">
+					<span style="font-size: 2em; color: white;">
+						<i class="fab fa-instagram"></i>
+					</span>
+				</a>
+				<a href="https://twitter.com/">
+					<span style="font-size: 2em; color: white;">
+						<i class="fab fa-twitter"></i>
+					</span>
+				</a>
+				<a href="https://outlook.office.com/mail/">
+					<span style="font-size: 2em; color: white;">
+						<i class="fas fa-envelope"></i>
+					</span>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+
+
+</body>
+
+</html>
