@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SNKR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b01e9844c8.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="visible.js" defer></script>
+    <script type="module" src="../databank.js"></script>
+    <script type="module" src="../signin_up/user.js"></script>
+    <link  rel="3d files" href="https://snkr-web-topics.000webhostapp.com/3D/scene.html">
+</head>
+
+<body>
+
+
+
+    <header>
+        <nav class="flex items-center justify-between flex-wrap bg-emerald-700 p-6">
+            <a href="../index.html" class="flex items-center flex-shrink-0 text-white mr-16">
+                <img src="../foto's/logo.png" alt="Product screenshot" class="fill-current h-11 w-11 mr-3" width="305"
+                    height="109">
+                <span class="font-bold text-xl tracking-tight">SNKR</span>
+            </a>
+
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="../categorie/men.html"
+                        class="block mt-4 lg:inline-block lg:mt-0  font-semibold text-teal-200 hover:text-white mr-4">MEN</a>
+                    <a href="../categorie/women.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white mr-4">WOMEN</a>
+                    <a href="../categorie/kids.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white mr-4">KIDS</a>
+                    <a href="3dfile.html?schoen=custom"
+					class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white">CUSTOM</a>
+                </div>
+                <div>
+					<p id="naam" class="mr-8"></p>
+		  
+				  </div>
+                <div>
+                    <button id="logout"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign Out</button>
+          
+                    <a href="../signin_up/signin.html"
+                        class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign
+                        In</a>
+                    <a href="../signin_up/signup.html"
+                        class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign
+                        Up</a>
+                    <a href="../checkout/winkelmand.html" class="inline-block ml-16">
+                        <span style="font-size: 1.5em; color: white;">
+                            <i class="fas fa-cart-plus"></i>
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+
+        <div id="kleuren" hidden>
+            <div class="space-x-2 flex text-sm my-4  justify-center  items-center">
+            
+                <label>
+                    <input class="sr-only peer" name="onderdelen" type="radio" value="schoen" checked >
+                    <span
+                        class="w-16 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                        Shoe
+                </span>
+                </label>
+                <label>
+                    <input class="sr-only peer" name="onderdelen" type="radio" value="zool" >
+                    <span
+                        class="w-16 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                        Sole
+                </span>
+                </label>
+                <label>
+                    <input class="sr-only peer" name="onderdelen" type="radio" value="veters" >
+                    <span
+                        class="w-16 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                        Laces
+                    </span>
+                </label>
+            </div>
+    
+            <div class="flex-auto flex space-x-4 my-4 justify-center items-center" >
+                <button id="zwart" class=" px-6 py-2 font-semibold rounded-md bg-black text-white" type="submit" >
+                    Black
+                </button>
+                <button id="grijs" class=" px-6 py-2 font-semibold rounded-md bg-neutral-500 text-white" type="submit" >
+                    Gray
+                </button>
+                <button id="groen" class=" px-6 py-2 font-semibold rounded-md bg-emerald-700 text-white" type="submit" >
+                    Green
+                </button>
+                <button id="lime" class=" px-6 py-2 font-semibold rounded-md bg-lime-500 text-white" type="submit" >
+                    Lime Green
+                </button>
+                <button id="oranje" class=" px-6 py-2 font-semibold rounded-md bg-orange-500 text-white" type="submit" >
+                    Orange
+                </button>
+            </div>
+        </div>
+       
+
+
+        <p class="font-bold text-center p-6">Press ESC to exit.</p>
+
+       
+        <div style="height: 600px;" class="w-full">
+            <a-scene embedded vr-mode-ui="enabled: false" keyboard-shortcuts="enterVR: false"
+                loading-screen="enabled: true" background="color: false" cursor="rayOrigin: mouse" debug> <!--stats-->
+
+    
+                <a-assets>
+                    <a-asset-item id="m1" src="assets/men/shoe1.glb"></a-asset-item>
+                    <a-asset-item id="m2" src="assets/men/shoe2.glb"></a-asset-item>
+                    <a-asset-item id="m3" src="assets/men/shoe3.glb"></a-asset-item>
+                    <a-asset-item id="m4" src="assets/men/shoe4.glb"></a-asset-item>
+                    <a-asset-item id="w1" src="assets/women/shoe1.glb"></a-asset-item>
+                    <a-asset-item id="w2" src="assets/women/shoe2.glb"></a-asset-item>
+                    <a-asset-item id="w3" src="assets/women/shoe3.glb"></a-asset-item>
+                    <a-asset-item id="w4" src="assets/women/shoe4.glb"></a-asset-item>
+                    <a-asset-item id="k1" src="assets/kids/shoe1.glb"></a-asset-item>
+                    <a-asset-item id="k2" src="assets/kids/shoe2.glb"></a-asset-item>
+                    <a-asset-item id="k3" src="assets/kids/shoe3.glb"></a-asset-item>
+                    <a-asset-item id="k4" src="assets/kids/shoe4.glb"></a-asset-item>
+                </a-assets>
+
+               
+                
+                <a-entity id="custom"  rotation="0 -40 0" visible="false">
+                <a-entity look-controls="pointerLockEnabled:true" >
+                    <a-cylinder id ="veters" radius="0.1" height="1.2"  material="color: #7B7B7B" rotation="0 90 90" position="0.05 1.2 0"></a-cylinder>
+               
+                    <a-cylinder id ="veters1" radius="0.1" height="1.2"  material="color: #7B7B7B" rotation="0 90 90" position="0.4 0.7 0"></a-cylinder>
+               
+                    <!-- Create bottom -->
+                    <a-cylinder id ="zool" radius="1" height="0.2" material="color:#047857" scale="1.5 0.75 0.75"></a-cylinder>
+                   
+                    <!-- Create box on top -->
+                    <a-cylinder id ="schoen" height="1.5" radius="0.6" material="color: #000000" position="-0.66 0.85 0"></a-cylinder>
+                    <a-box id ="schoen1" width="0.66" height="1.0" depth="1" material="color: #000000" position="0 0.6 0"></a-box>
+                    <a-cylinder id ="schoen2" height="0.5" radius="0.6" material="color: #000000" position="0.66 0.35 0"></a-cylinder>
+                    
+                </a-entity>
+                    
+                  </a-entity>
+               
+                <a-entity animation="property: rotation; to: 0 450 0; dur: 3000">
+                    <a-entity id="mv1" gltf-model="#m1" look-controls="pointerLockEnabled:true" scale="3.0 3.0 3.0"
+                        position="0 0 0" rotation="0 45 0" visible="false">
+                    </a-entity>
+                    <a-entity id="mv2" gltf-model="#m2" look-controls="pointerLockEnabled:true" scale="5.0 5.0 5.0"
+                        position="0 0 0" rotation="0 45 0" visible="false">
+                    </a-entity>
+                    <a-entity id="mv3" gltf-model="#m3" look-controls="pointerLockEnabled:true" scale="1.5 1.5 1.5"
+                        position="0 0 0" rotation="0 45 0" visible="false">
+                    </a-entity>
+                    <a-entity id="mv4" gltf-model="#m4" look-controls="pointerLockEnabled:true" scale="9.0 9.0 9.0"
+                        position="0 1 0" rotation="0 45 0" visible="false">
+                    </a-entity>
+                    <a-entity id="vv1" gltf-model="#w1" look-controls="pointerLockEnabled:true" scale="2.0 2.0 2.0"
+                        position="0 0 0" rotation="0 45 0" visible="false">
+                    </a-entity>
+                    <a-entity id="vv2" gltf-model="#w2" look-controls="pointerLockEnabled:true" scale="0.15 0.15 0.15"
+                        position="0 0 0" rotation="0 45 0" visible="false">
+                    </a-entity>
+                    <a-entity id="vv3" gltf-model="#w3" look-controls="pointerLockEnabled:true" scale="0.75 0.75 0.75"
+                        position="0 0 0" rotation="0 45 0" visible="false">
+                    </a-entity>
+                    <a-entity id="vv4" gltf-model="#w4" look-controls="pointerLockEnabled:true" scale="0.75 0.75 0.75"
+                        position="0 0 0" rotation="0 45 0" visible="false">
+                    </a-entity>
+                    <a-entity id="kv1" gltf-model="#k1" look-controls="pointerLockEnabled:true" scale="12.0 12.0 12.0"
+                        position="0 0 0" rotation="0 45 0" visible="false">
+                    </a-entity>
+                    <a-entity id="kv2" gltf-model="#k2" look-controls="pointerLockEnabled:true" scale="13.0 13.0 13.0"
+                        position="0 0 0" rotation="0 45 0" visible="false">
+                    </a-entity>
+                    <a-entity id="kv3" gltf-model="#k3" look-controls="pointerLockEnabled:true" scale="0.25 0.25 0.25"
+                        position="0 0 0" rotation="0 45 0" visible="false">
+                    </a-entity>
+                    <a-entity id="kv4" gltf-model="#k4" look-controls="pointerLockEnabled:true" scale="20.0 20.0 20.0"
+                        position="0 0 0" rotation="0 45 0" visible="false">
+                    </a-entity>
+                </a-entity>
+
+
+          
+                <a-entity position="0 0.05 6.2" rotation="-15 0 0">
+                    <a-camera fov="60" far="40" look-controls="enabled:false"
+                        wasd-controls="acceleration:25"></a-camera>
+                </a-entity>
+
+            </a-scene>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="bg-white dark:bg-gray-900">
+        <div class="mb-6 md:mb-0 p-8">
+            <a href="../index.html" class="flex items-center">
+                <img src="../foto's/logo.png" alt="Product screenshot" class="fill-current h-11 w-11 mr-3" width="305"
+                    height="109">
+                <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">SNKR</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Company</h2>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class=" hover:underline">About</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Careers</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Brand Center</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Help Center</h2>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Twitter</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Facebook</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Legal</h2>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Privacy Policy</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Licensing</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Terms&Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Locations</h2>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Gent</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Brugge</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Antwerpen</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 All Rights Reserved.
+            </span>
+            <div class="flex mt-4 mr-16 space-x-6 sm:justify-center md:mt-0">
+
+                <a href="https://www.facebook.com/">
+                    <span style="font-size: 2em; color: white;">
+                        <i class="fab fa-facebook"></i>
+                    </span>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <span style="font-size: 2em; color: white;">
+                        <i class="fab fa-instagram"></i>
+                    </span>
+                </a>
+                <a href="https://twitter.com/">
+                    <span style="font-size: 2em; color: white;">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                </a>
+                <a href="https://outlook.office.com/mail/">
+                    <span style="font-size: 2em; color: white;">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SNKR</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b01e9844c8.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="databank.js" ></script>
+  <script type="module" src="user.js" ></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+
+
+<header>
+  <nav class="flex items-center justify-between flex-wrap bg-emerald-700 p-6">
+    <a href="../index.html" class="flex items-center flex-shrink-0 text-white mr-16">
+      <img src="../foto's/logo.png" alt="Product screenshot" class="fill-current h-11 w-11 mr-3" width="305" height="109">
+        <span class="font-bold text-xl tracking-tight">SNKR</span>
+    </a>
+    
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a href="../categorie/men.html" class="block mt-4 lg:inline-block lg:mt-0  font-semibold text-teal-200 hover:text-white mr-4">MEN</a>
+        <a href="../categorie/women.html" class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white mr-4">WOMEN</a>
+        <a href="../categorie/kids.html" class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white mr-4">KIDS</a>
+        <a href="../categorie/3dfile.html?schoen=custom"
+					class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white">CUSTOM</a>
+      </div>
+      <div>
+        <p id="naam" class="mr-8"></p>
+
+      </div>
+      <div>
+        <button id="logout"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign Out</button>
+          
+        <a href="signin.html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign In</a>
+        <a href="signup.html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign Up</a>
+        <a href="../checkout/winkelmand.html" class="inline-block ml-16">
+          <span style="font-size: 1.5em; color: white;">
+            <i class="fas fa-cart-plus"></i>
+      </span>
+        </a>  
+    
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+<main class="pl-16 pr-16">
+	<section class="bg-white dark:bg-gray-900 m-4">
+	  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-6 lg:px-6">
+	      <div class="mx-auto max-w-screen-md sm:text-center">
+	          <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">TNX</h2>
+	          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Thanks for your support</p>
+	      </div>
+	  </div>
+	</section>
+</main>
+
+
+
+<footer class="bg-white dark:bg-gray-900">
+  <div class="mb-6 md:mb-0 p-8">
+            <a href="../index.html" class="flex items-center">
+                <img src="../foto's/logo.png" alt="Product screenshot" class="fill-current h-11 w-11 mr-3" width="305" height="109">
+                <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">SNKR</span>
+            </a>
+        </div>
+    <div class="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Company</h2>
+            <ul class="text-gray-500 dark:text-gray-400">
+                <li class="mb-4">
+                    <a href="#" class=" hover:underline">About</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Careers</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Brand Center</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Help Center</h2>
+            <ul class="text-gray-500 dark:text-gray-400">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Twitter</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Facebook</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Legal</h2>
+            <ul class="text-gray-500 dark:text-gray-400">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Licensing</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Terms&Conditions</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Locations</h2>
+            <ul class="text-gray-500 dark:text-gray-400">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Gent</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Brugge</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Antwerpen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 All Rights Reserved.
+        </span>
+        <div class="flex mt-4 mr-16 space-x-6 sm:justify-center md:mt-0">
+
+            <a href="https://www.facebook.com/" >
+              <span style="font-size: 2em; color: white;">
+            <i class="fab fa-facebook"></i>
+        </span>
+      </a>
+            <a href="https://www.instagram.com/">
+              <span style="font-size: 2em; color: white;">
+            <i class="fab fa-instagram"></i>
+        </span>
+      </a>
+            <a href="https://twitter.com/">
+              <span style="font-size: 2em; color: white;">
+            <i class="fab fa-twitter"></i>
+        </span>
+      </a>
+            <a href="https://outlook.office.com/mail/">
+              <span style="font-size: 2em; color: white;">
+            <i class="fas fa-envelope"></i>
+        </span>
+      </a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
