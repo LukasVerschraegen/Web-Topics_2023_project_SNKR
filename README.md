@@ -1,6 +1,6 @@
 # Web-Topics_2023_project_SNKR
 
-git clone
+git clone https://github.com/LukasVerschraegen/Web-Topics_2023_project_SNKR.git
 
 https://lukasverschraegen.ikdoeict.be/
 https://snkr-web-topics.000webhostapp.com/
